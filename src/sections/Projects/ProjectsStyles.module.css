@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  img {
+    width: 600px;
+    align-self: center;
+    background-color: var(--project-card-bg);
+    border-radius: 20px;
+    height: 400px;
+  }
+
+  a {
+    width: fit-content;
+    text-decoration: none;
+    color: #222;
+    transition: transform 200ms ease-in-out;
+  }
+
+  a:hover {
+    
+    transform: scale(1.05);
+  }
+}
+.hide{
+  padding: 20px;
+  margin-top: 30px;
+  margin-left: 250px;
+  background-color:white;
+  display: block;
+  color: rgb(45, 137, 187);
+  border: 2px solid black ;
+  border-radius: 10px;
+ width: 250px;
+ height: 80px;
+ 
+  
+}
+.hide{
+  font-weight: 150;
+  font-size: larger;
+}
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+
+
+@media (width >= 800px) {
+  .projectsContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 30px;
+  }
+}
+button {
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
+    border: none;
+    border-radius: 20px;
+    width: 126px;
+    height: 50px;
+    margin-left: 350px;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+  }
